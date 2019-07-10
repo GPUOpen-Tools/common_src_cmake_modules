@@ -1,4 +1,4 @@
-## Copyright (c) 2018 Advanced Micro Devices, Inc. All rights reserved.
+## Copyright (c) 2018-2019 Advanced Micro Devices, Inc. All rights reserved.
 cmake_minimum_required(VERSION 3.5.1)
 
 include(${CMAKE_CURRENT_LIST_DIR}/Global-Internal.cmake)
@@ -115,7 +115,7 @@ if(WIN32)
     ## /DEBUG : generate debug information
     ## /OPT:ICF enable COMDATA folding
     ## /INCREMENTAL:NO : Incremental Link
-    set(COMMON_RELEASE_COMPILATION_FLAGS    /Z7 /GF /MP /O2 /MD)
+    set(COMMON_RELEASE_COMPILATION_FLAGS    /Z7 /GF /MP4 /O2 /MD)
     set(COMMON_RELEASE_LINKER_FLAGS         "/LTCG /OPT:REF /DEBUG /OPT:ICF /INCREMENTAL:NO /MANIFEST:NO")
 
     ## Debug Compiler Flags:
